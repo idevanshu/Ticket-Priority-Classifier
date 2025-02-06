@@ -4,7 +4,7 @@ import torch.nn as nn
 import spacy
 import os
 import pickle
-
+import subprocess
 # --------------------
 # GLOBALS / CONSTANTS
 # --------------------
@@ -14,6 +14,16 @@ NUM_CLASSES = 3
 MAX_LENGTH = 50  # The max length used for padding
 VOCAB_FILE = "vocab.pkl"  # Ensure this file exists
 MODEL_FILE = "cnn_model"  # Ensure this file exists
+
+
+
+# Ensure en_core_web_sm is installed
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
+
 
 # Load SpaCy for text preprocessing
 nlp = spacy.load('en_core_web_sm')
