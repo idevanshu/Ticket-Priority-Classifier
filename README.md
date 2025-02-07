@@ -5,15 +5,26 @@
 
 A **machine learning-powered** Ticket Priority Classifier that automatically assigns priority levels to incoming tickets based on predefined criteria.
 
-🚀 **Try it Live**:  
-🔗 **[Ticket Priority Classifier](https://idevanshu-ticket-priority-classifier.streamlit.app/)**
+🚀 **Try it Live**:👇 <br>
+🔗**[Ticket Priority Classifier](https://idevanshu-ticket-priority-classifier.streamlit.app/)**
 
 ---
 
 ## 📌 Features
+
 ✅ AI-driven classification of ticket priorities  
 ✅ Simple & intuitive UI built with **Streamlit**  
 ✅ Fast, real-time predictions  
+
+---
+
+## 🧠 Model Details & Creation
+
+The machine learning model used for ticket classification has been developed using **Natural Language Processing (NLP) techniques**. It analyzes ticket descriptions to determine their priority level.  
+
+To explore the model development process, dataset, and training methodology, check out the **dedicated GitHub repository**:  
+🔗 **[Model Repository(Kamalnayan10)](https://github.com/kamalnayan10/ticket_priority_classification.git)**  
+
 ---
 
 ## 🛠️ Installation
@@ -32,3 +43,4 @@ pip install -r requirements.txt
 
 # Run the Streamlit app
 streamlit run app.py
+```
